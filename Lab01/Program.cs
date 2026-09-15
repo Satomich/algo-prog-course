@@ -11,6 +11,8 @@ Console.WriteLine($"Курс: {courseNumber}");
 Console.WriteLine($"Средний балл: {averageGrade}");
 Console.WriteLine($"Бюджетное место: {isBudget}");
 
+// программа производит расчёт площади, периметра и ширины комнаты на основе введённых в неё данных
+
 Console.WriteLine();
 Console.WriteLine("Ремонт: комната");
 
@@ -24,6 +26,7 @@ Console.WriteLine($"Ширина: {roomWidth} м, длина: {roomLength} м");
 Console.WriteLine($"Площадь: {roomArea} кв.м");
 Console.WriteLine($"Периметр: {roomPerimeter} м");
 
+//  программа производит расчёт цены ноутбука, как отдельную так и с процентами, а также ежемесячный платёж на основе введённых в неё данных
 
 Console.WriteLine();
 Console.WriteLine("Покупка ноутбука в рассрочку");
@@ -40,6 +43,7 @@ Console.WriteLine($"Итого с процентами: {totalWithInterest} ру
 Console.WriteLine($"Платёж в месяц: {monthlyPayment} руб.");
 
 
+
 Console.WriteLine();
 Console.WriteLine("Внимание: деление int");
 
@@ -52,7 +56,7 @@ double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
 Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
 
-
+// описание и практическое применение всех способов сбора строки
 Console.WriteLine();
 Console.WriteLine("Способы собрать строку");
 
@@ -74,7 +78,7 @@ Console.WriteLine(fullNameConcatMethod);
 Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
 
-
+// принцип работы констант
 Console.WriteLine();
 Console.WriteLine("Константы");
 
@@ -85,4 +89,4 @@ double productPrice = 1000;
 double priceWithVat = productPrice * (1 + VatRate);
 
 Console.WriteLine($"Учебное заведение: {CollegeName}");
-Console.WriteLine($"Цена без НДС
+Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}):{priceWithVat}");
