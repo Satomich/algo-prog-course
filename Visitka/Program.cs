@@ -28,3 +28,4 @@ else
 {
     Console.WriteLine("Стипендия не положена");
 }
+
