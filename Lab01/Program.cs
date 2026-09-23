@@ -92,10 +92,17 @@
 // Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}):{priceWithVat}");
 
 
-int scholarship = 2000;
-int monthlyExpenses = 1500;
-int leftovers = scholarship - monthlyExpenses;
-Console.WriteLine($"Деньги оставшиеся под конец месяца: {leftovers}");
-const int MonthsInSemester = 4;
-int semleftov = leftovers * MonthsInSemester;
-Console.WriteLine($"Деньги оставшиеся под конец семестра: {semleftov}");
+// int scholarship = 2000;
+// int monthlyExpenses = 1500;
+// int leftovers = scholarship - monthlyExpenses;
+// Console.WriteLine($"Деньги оставшиеся под конец месяца: {leftovers}");
+// const int MonthsInSemester = 4;
+// int semleftov = leftovers * MonthsInSemester;
+// Console.WriteLine($"Деньги оставшиеся под конец семестра: {semleftov}");
+
+
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+int lessonCount = totalMinutes / minutesPerLesson;
+int procentCount = totalMinutes % minutesPerLesson;
+Console.WriteLine($"{totalMinutes} минут = {lessonCount} полных занятий + {procentCount} минут");
